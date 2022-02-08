@@ -23,6 +23,9 @@ class A:
             return response
 
 
-
+json_file_1 = os.path.join(os.getcwd(), "json_1.json")
+url_adress_1 = requests.get('https://xkcd.com/353/')
+r = A(json_file_1, url_adress_1)
+r.jpj_dowload()
 
 
